@@ -5,7 +5,15 @@
 }
 .navegador{
     background-color: #272829;
+    display: flex;
+    justify-content: space-between;
 }
+.navegador img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
 .navegador ul{
     display: flex;
     list-style: none;
@@ -27,37 +35,176 @@
 @media(max-width:765px){
     .navegador ul{
         background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .navegador ul li a{
         color: black;
+     
+    }
+}
+@media(max-width:1067px){
+    .navegador img{
+        display: none;
     }
 }
 .navegador ul li a:hover{
     background-color: #61677A;
-    transition: 1s;
+    transition: 2s;
 }
-.carousel-inner{
+h1{
     width: 100%;
-    height: 850px;
+    font-size: 45px;
     margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+.historia{
+    width: 100%;
+    padding: 25px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.historia1{
+    background-color: #61677a7e;
+    margin: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+.historia1 h2{
+    display: flex;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.historia1 p{
+    display: flex;
+    font-size: 40px;
+    margin: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.historia1 img{
+    width: 850px;
+    height: 600px;
+
+}
+.historia2{
+    background-color: #61677a7e;
+    margin: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+.historia2 h2{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.historia2 p{
+    font-size: 40px;
+    margin: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.historia2 img{
+    width:850px;
+    height: 600px;
+
+}
+
+.principio{
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    padding: 15px;
+    justify-content: space-around;
 }
 .tarjetas{
     width: 550px;
-    height: 650px;
+    height: 350px;
     margin: 15px;
     padding: 10px;
     display: flex;
+    text-align: center;
+    justify-content: center;
     flex-direction: column;
     border: 3px solid black;
     border-radius: 5px;
 }
 .tarjetas h3{
+    justify-content: center;
+    text-align: center;
     display: flex;
     text-align: center;
 }
-.tarjetas img{
-    display: flex;
-    width: 500px;
-    height: 450px;
-    
+.tarjetas button{
+    margin: 15px;
+    padding: 15px 10px;
+    background-color:#61677ae5;
+}
+.tarjetas button:hover{
+    background-color: #515666;
+    color: white;
+}
+.sombra_movil{
+	-webkit-transform: translateX(0);
+}
+
+.sombra_movil:before{
+	content: '';
+	position: absolute;
+	width: 90%;
+	top: 100%;
+	left: 10%;
+	height: 10px;
+	background: -webkit-radial-gradient(
+		center, ellipse,
+		rgba(0,0,0,0.30) 0%,
+		rgba(0,0,0,0) 80%);
+	-webkit-transition-duration: 0.5s;
+	opacity: 15;
+}
+
+.sombra_movil:hover{
+	-webkit-transform: translateY(-5px);
+	-webkit-animation: 1.5s movercaja infinite;	
+}
+
+@-webkit-keyframes movercaja{
+	50%{
+		-webkit-transform: translateY(-3px);
+	}
+}
+.sombra_movil:hover:before{
+    opacity: 0.4;
+    -webkit-transform: translateY(5px);
+    opacity: 1;
+    -webkit-animation: 1.5s moversombra infinite;	
+}
+
+@-webkit-keyframes moversombra{
+	50%{
+		opacity: 1;
+		-webkit-transform: translateY(3px);
+	}
 }
