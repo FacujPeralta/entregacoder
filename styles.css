@@ -135,6 +135,8 @@ h1{
 .principio{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
     margin: 25px;
     padding: 15px;
     justify-content: space-around;
@@ -166,6 +168,36 @@ h1{
     background-color: #515666;
     color: white;
 }
+.cartilla{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    color: #272829;
+    font-size: 50px;
+}
+.productos{
+    width: 450px;
+    margin: 15px;
+    padding: 20px;
+    border: 3px solid black;
+    gap: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productos button{
+    padding: 15px 25px;
+    background-color: #61677ae5;
+}
+.productos button:hover{
+    background-color: #515666;
+    color: white;
+}
+.productos img{
+    width: 400px;
+    height: 300px;
+}
+
 .sombra_movil{
 	-webkit-transform: translateX(0);
 }
@@ -207,4 +239,75 @@ h1{
 		opacity: 1;
 		-webkit-transform: translateY(3px);
 	}
+}
+
+
+.formulario{
+    background-color: #61677a57;
+    width: 950px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.pie{
+    width: 100%;
+    padding: 30px;
+    background-color: #515666b3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.pie p{
+    font-size: 35px;
+    color: black;
 }
