@@ -103,8 +103,16 @@ h1{
     height: 600px;
     display: flex;
     flex-wrap: wrap;
-
 }
+@media (max-width:850px){
+    .historia1 img{
+        display: none;
+    }
+    .historia2 img{
+        display: none;
+    }
+}
+
 .historia2{
     background-color: #61677a7e;
     margin: 25px;
@@ -408,6 +416,7 @@ button:hover {
     background-color: #515666;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -420,12 +429,13 @@ button:hover {
     padding: 30px;
     background-color: #515666b3;
     color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .pie p{
     font-size: 35px;
     color:white;
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
 }
 .fa-brands{
@@ -434,4 +444,10 @@ button:hover {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
+}
+@media(max-width:785px){
+    .fa-brands{
+        display: none;
+    }
+    
 }
